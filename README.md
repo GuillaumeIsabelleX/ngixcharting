@@ -2,6 +2,8 @@
 
 Mastery Experimentation to Mastery Charting using Angular and relevant Charting package such as ng2-chart
 
+https://guillaumeisabellex.github.io/ngixcharting/docs/
+
 
 ## Installation
 
