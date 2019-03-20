@@ -12,7 +12,7 @@
     "build:subapp": "./build-sub-app",
     "commit:docs": "git add docs/* ;  git commit docs -m \"docs updated\" && git push",
     "release:docs": "npm run build:docs && npm run commit:docs",
-    "browse:release": "gixb https://jgwill.github.io/ngixcharting/",
+    "browse:release": "gixb https://guillaumeisabellex.github.io/ngixcharting/docs/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
