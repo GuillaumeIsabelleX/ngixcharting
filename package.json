@@ -7,6 +7,12 @@
     "start": "ng serve --host 0.0.0.0 --port 4266 --disableHostCheck",
     "browse:dev": "gixb http://localhost:4266",
     "build": "ng build",
+
+    "build:docs": "ng build --prod --output-path docs --base-href /ngixcharting/docs && cp docs/index.html docs/404.html ",
+    "build:subapp": "./build-sub-app",
+    "commit:docs": "git add docs/* ;  git commit docs -m \"docs updated\" && git push",
+    "release:docs": "npm run build:docs && npm run commit:docs",
+    "browse:release": "gixb https://jgwill.github.io/ngixcharting/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
