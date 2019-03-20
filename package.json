@@ -1,9 +1,11 @@
 {
   "name": "ngixcharting",
+  "description":"Mastery Experimentation to Mastery Charting using Angular and relevant Charting package such as ng2-chart",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --port 4266 --disableHostCheck",
+    "browse:dev":"gixb http://localhost:4266",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
