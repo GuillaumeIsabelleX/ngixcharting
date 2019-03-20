@@ -12,8 +12,7 @@ export class TestNg2chartsInstallationComponent implements OnInit {
   };
 
   chartData = [
-    { data: [12, 22, 34, 13, 15, 27] },
-    { data: [11, 22, 32, 18, 15, 27] }
+    { data: [12, 22, 34, 13, 15, 27] }
   ];
   chartLabels = ['a', 'b', 'c', 'd', 'e', 'f'];
 
@@ -26,4 +25,15 @@ export class TestNg2chartsInstallationComponent implements OnInit {
   ngOnInit() {
   }
 
+  newDataPoint(dataArr = [15], label) {
+
+    this.chartData.forEach((dataset, index) => {
+      this.chartData[index] = Object.assign({}, this.chartData[index], {
+        data: [...this.chartData[index].data, dataArr[index]]
+      });
+    });
+  
+    this.chartLabels = [...this.chartLabels, label];
+  
+  }
 }
