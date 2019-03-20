@@ -4,6 +4,7 @@ Mastery Experimentation to Mastery Charting using Angular and relevant Charting 
 
 https://guillaumeisabellex.github.io/ngixcharting/docs/
 
+https://stackblitz.com/edit/angular-ng2-charts-190320?file=app%2Fline-chart.component.html
 
 ## Installation
 
